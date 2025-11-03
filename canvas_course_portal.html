@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Course Access Portal</title>
+    <!-- Load Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Import Inter for headings and Roboto for highly readable body copy */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb;
+        }
+        p, ul, li {
+             font-family: 'Roboto', sans-serif;
+             font-weight: 400; 
+        }
+        .text-gradient {
+            /* Orange to Yellow gradient for warmth */
+            background-image: linear-gradient(to right, #f97316, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased">
+
+    <!-- Header and Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Link back to the projects page -->
+                <a href="projects.html" class="text-2xl font-extrabold text-gray-900 hover:text-orange-600 transition duration-300">
+                    &larr; Back to Portfolio
+                </a>
+                <nav class="flex space-x-4 sm:space-x-8">
+                    <a href="resume.html" class="text-gray-600 hover:text-gray-900 transition duration-300 font-medium">Resume</a>
+                    <a href="contact.html" class="px-3 py-1.5 text-sm font-semibold bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition duration-300 shadow-md">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-16 md:py-20">
+        <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 bg-white p-8 md:p-12 rounded-2xl shadow-2xl border border-gray-200 text-center">
+            
+            <h1 class="text-4xl font-extrabold text-gray-900 mb-4">
+                <span class="text-gradient">Access Canvas Demo Course</span>
+            </h1>
+            <p class="text-lg text-gray-600 mb-8">
+                Use the direct course URL and the demo credentials below to access the "Using GenAI to Create UDL-Compliant Student Resources" course.
+            </p>
+
+            <div class="space-y-8 text-left">
+                
+                <!-- Direct Course URL -->
+                <div class="p-4 bg-orange-50 border-l-4 border-orange-500 rounded-lg shadow-sm">
+                    <p class="font-bold text-lg text-orange-800 mb-2">Direct Course URL</p>
+                    <a href="https://canvas.instructure.com/courses/12519360" target="_blank" class="block text-gray-700 font-semibold hover:text-orange-700 break-all transition duration-300 underline">
+                        https://canvas.instructure.com/courses/12519360
+                    </a>
+                </div>
+
+                <!-- Login Details -->
+                <div class="p-4 bg-gray-50 border-l-4 border-gray-300 rounded-lg shadow-sm">
+                    <p class="font-bold text-lg text-gray-900 mb-2">Demo Credentials</p>
+                    <p class="text-gray-700 mb-3">Use these details when prompted to log in to the platform:</p>
+                    <div class="grid grid-cols-2 gap-3 text-sm">
+                        <div class="bg-white p-3 rounded-lg border">
+                            <span class="block font-medium text-gray-500">Email (Login)</span>
+                            <span class="block font-bold text-gray-900 break-all">igo@gmx.com</span>
+                        </div>
+                        <div class="bg-white p-3 rounded-lg border">
+                            <span class="block font-medium text-gray-500">Password</span>
+                            <span class="block font-bold text-gray-900">sample33</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-3 italic">Note: If you already have a free Canvas account, you may need to log out first.</p>
+                </div>
+            </div>
+
+            <p class="text-sm text-gray-500 mt-10">
+                This course demonstrates live e-learning content created for faculty professional development.
+            </p>
+
+        </div>
+    </main>
+
+    <!-- Footer (Standard) -->
+    <footer class="bg-white border-t border-gray-200 py-8 mt-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-600 text-sm">
+            <p>&copy; 2025 Lisa Martin Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

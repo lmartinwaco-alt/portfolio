@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lisa Martin, PhD | Instructional Designer Portfolio</title>
+    <!-- Load Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font import for a professional look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb; /* Light background */
+        }
+        /* Adjusted gradient colors for a softer professional look */
+        .text-gradient {
+            /* Indigo to Blue gradient remains, but will stand out better on light BG */
+            background-image: linear-gradient(to right, #6366f1, #3b82f6); 
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased">
+
+    <!-- Header and Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo/Name -->
+                <a href="#" class="text-2xl font-extrabold text-gradient">Lisa Martin, PhD</a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="projects.html" class="text-gray-600 hover:text-gray-900 transition duration-300 font-medium">Projects</a>
+                    <a href="resume.html" class="text-gray-600 hover:text-gray-900 transition duration-300 font-medium">Resume</a>
+                    <!-- UPDATED CONTACT LINK -->
+                    <a href="contact.html" class="px-3 py-1.5 text-sm font-semibold bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition duration-300 shadow-md">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-gray-900 focus:outline-none p-2 rounded-lg">
+                    <!-- Icon SVG for Menu -->
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path id="menu-open-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-100 border-t border-gray-300">
+                    <a href="projects.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">Projects</a>
+                    <a href="resume.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">Resume</a>
+                    <!-- UPDATED CONTACT LINK -->
+                    <a href="contact.html" class="block px-4 py-2 text-sm text-indigo-600 font-semibold hover:bg-gray-200">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section (Introduction and Picture) -->
+        <section class="py-20 md:py-32 bg-white border-b border-gray-200">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
+                <!-- Picture -->
+                <!-- The image is referenced by the uploaded filename 'Lisa_Martin.jpg'. -->
+                <img src="Lisa_Martin.jpg" 
+                     alt="Lisa Martin Professional Headshot" 
+                     class="w-36 h-36 rounded-full object-cover mb-6 border-4 border-indigo-500 shadow-xl"
+                     onerror="this.onerror=null; this.src='https://placehold.co/144x144/cbd5e1/475569?text=L.M.'">
+                
+                <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold mb-2 leading-tight">
+                    <span class="block text-gray-900">Lisa Martin, PhD</span>
+                </h1>
+                <p class="text-2xl sm:text-3xl font-semibold text-gradient mb-8 max-w-2xl mx-auto">
+                    Instructional Designer & E-Learning Developer
+                </p>
+                <p class="text-lg text-gray-700 mb-10 max-w-2xl mx-auto">
+                    I design engaging learning experiences that put the learner first. My expertise lies in thinking critically and creatively about how to meet the needs of targeted users so that true learning happens.
+                </p>
+
+                <!-- UPDATED LINK -->
+                <a href="projects.html" class="inline-block px-8 py-3 text-lg font-semibold bg-indigo-600 text-white rounded-xl shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-105">
+                    View Featured Projects
+                </a>
+            </div>
+        </section>
+
+        <!-- Projects Section (Kept on home page for quick view/scrolling, but main link directs to new page) -->
+        <section id="projects" class="py-16 md:py-24 bg-[#f7f9fb]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Featured Projects & Expertise</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                    <!-- Project Card 1: E-Learning Module -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-indigo-400/50 transition duration-500 border border-gray-200">
+                        <div class="text-indigo-600 mb-4">
+                            <!-- Icon: Development -->
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1v-3.25m-7-5.5a4.75 4.75 0 109.5 0m-9.5 0h9.5M12 4.75V4"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-900">Interactive Compliance Training</h3>
+                        <p class="text-gray-600">Developed a Scorm-compliant e-learning module reducing training time by 40% using Articulate Storyline and gamification techniques.</p>
+                        <!-- LINK TO NEW PAGE -->
+                        <a href="projects.html" class="mt-4 block text-indigo-600 hover:text-indigo-800 transition duration-300 font-semibold">Learn More &rarr;</a>
+                    </div>
+
+                    <!-- Project Card 2: Needs Analysis -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-indigo-400/50 transition duration-500 border border-gray-200">
+                        <div class="text-indigo-600 mb-4">
+                            <!-- Icon: Analysis -->
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1120.945 13H11M11 3.055V13"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-900">Performance Gap Assessment</h3>
+                        <p class="text-gray-600">Conducted comprehensive TNA for a sales team, resulting in targeted microlearning paths to address specific skill deficits.</p>
+                         <!-- LINK TO NEW PAGE -->
+                        <a href="projects.html" class="mt-4 block text-indigo-600 hover:text-indigo-800 transition duration-300 font-semibold">Learn More &rarr;</a>
+                    </div>
+
+                    <!-- Project Card 3: Video Production -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-indigo-400/50 transition duration-500 border border-gray-200">
+                        <div class="text-indigo-600 mb-4">
+                            <!-- Icon: Video -->
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.55-2.275a.75.75 0 011.025.688v7.174a.75.75 0 01-1.025.688L15 14m-5-3.5a3 3 0 100-6 3 3 0 000 6zM5 13a3 3 0 100-6 3 3 0 000 6zM15 13a3 3 0 100-6 3 3 0 000 6zM12 18h.01"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-900">Software Simulation Videos</h3>
+                        <p class="text-gray-600">Created professional voice-over and screen capture tutorials for a new CRM system, boosting user adoption by 25%.</p>
+                         <!-- LINK TO NEW PAGE -->
+                        <a href="projects.html" class="mt-4 block text-indigo-600 hover:text-indigo-800 transition duration-300 font-semibold">Learn More &rarr;</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <!-- Resume Section -->
+        <section id="resume" class="py-16 bg-gray-100 border-t border-b border-gray-200">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">View My Full Credentials</h2>
+                <p class="text-xl text-gray-700 mb-8">
+                    A detailed look at my experience, skills, and educational background.
+                </p>
+                <a href="resume.html" class="inline-block px-10 py-4 text-xl font-bold bg-gray-300 text-gray-800 rounded-xl shadow-md hover:bg-gray-400 transition duration-300 transform hover:scale-105 border border-gray-400">
+                    View Interactive Resume
+                </a>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 md:py-24 bg-[#f7f9fb]">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Let's Discuss Your Learning Needs</h2>
+                <p class="text-xl text-gray-700 mb-8">
+                    I'm currently open to new Instructional Design opportunities and collaborations.
+                </p>
+                <!-- UPDATED LINK -->
+                <a href="contact.html" class="inline-block px-10 py-4 text-xl font-bold bg-indigo-600 text-white rounded-full shadow-2xl shadow-indigo-600/50 hover:bg-indigo-700 transition duration-300 transform hover:scale-105">
+                    Send Me an Email
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-600 text-sm">
+            <p>&copy; 2025 Lisa Martin Portfolio. All rights reserved.</p>
+            <div class="mt-2 space-x-4">
+                <a href="#" class="hover:text-indigo-600">Privacy Policy</a>
+                <span class="text-gray-400">|</span>
+                <a href="#" class="hover:text-indigo-600">LinkedIn Profile</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle and Smooth Scrolling -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const button = document.getElementById('mobile-menu-button');
+            const menu = document.getElementById('mobile-menu');
+
+            button.addEventListener('click', () => {
+                // Toggle visibility
+                menu.classList.toggle('hidden');
+                // Optional: Change icon based on state (omitted for simplicity, but good practice)
+            });
+
+            // Close menu when a link is clicked
+            const allLinks = document.querySelectorAll('#mobile-menu a, header nav a');
+            allLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    // Hide mobile menu if visible
+                    if (!menu.classList.contains('hidden')) {
+                        menu.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
